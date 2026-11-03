@@ -1,0 +1,13 @@
+{
+  "name": "TaxiTarifa",
+  "short_name": "TaxiTarifa",
+  "description": "Estimador de corrida de táxi nas capitais brasileiras",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f2f2f6",
+  "theme_color": "#f0a416",
+  "icons": [
+    { "src": "icone-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TaxiTarifa</title>
+<meta name="description" content="Estimador de corrida de táxi nas capitais brasileiras — tarifas oficiais, bandeiras, feriados e demonstrativo de cálculo.">
+<link rel="icon" href="icone-512.png">
+<link rel="apple-touch-icon" href="icone-512.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#f0a416">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="topo">
+  <img src="icone-512.png" alt="" class="topo-icone">
+  <h1>TaxiTarifa</h1>
+  <div class="topo-botoes">
+    <button id="btn-historico" class="btn-icone" title="Histórico (10 últimas)">🕑</button>
+    <button id="btn-config" class="btn-icone" title="Configurações">⚙️</button>
+  </div>
+</header>
+
+<main>
+  <section class="cartao">
+    <h2>Cidade</h2>
+    <label class="linha">
+      <span>Capital</span>
+      <select id="cidade"></select>
+    </label>
+    <p id="tarifas-caption" class="legenda"></p>
+    <p id="versao-caption" class="legenda fraca"></p>
+    <p id="provedor-caption" class="legenda fraca"></p>
+  </section>
+
+  <section class="cartao">
+    <h2>Trajeto</h2>
+    <div class="campo-endereco" data-campo="origem">
+      <input type="text" placeholder="Local de partida" autocomplete="off" spellcheck="false">
+      <div class="sugestoes"></div>
+      <p class="lugar-resolvido"></p>
+    </div>
+    <div id="paradas"></div>
+    <button id="btn-add-parada" class="btn-sec">＋ Adicionar parada</button>
+    <div class="campo-endereco" data-campo="destino">
+      <input type="text" placeholder="Destino final" autocomplete="off" spellcheck="false">
+      <div class="sugestoes"></div>
+      <p class="lugar-resolvido"></p>
+    </div>
+  </section>
+
+  <section class="cartao">
+    <h2>Partida e serviço</h2>
+    <div class="segmentado" id="modo">
+      <button data-valor="sair" class="ativo">Sair às</button>
+      <button data-valor="chegar">Chegar até</button>
+    </div>
+    <label class="linha">
+      <span id="rotulo-horario">Horário de saída</span>
+      <input type="datetime-local" id="partida">
+    </label>
+    <p id="fuso-caption" class="legenda fraca oculto"></p>
+    <label class="linha oculto" id="linha-servico">
+      <span>Serviço</span>
+      <select id="servico">
+        <option value="comum">Comum</option>
+        <option value="especial">Especial (aeroporto e hotéis)</option>
+      </select>
+    </label>
+    <label class="linha oculto" id="linha-aeroporto">
+      <span>Corrida de/para o aeroporto</span>
+      <input type="checkbox" id="aeroporto">
+    </label>
+    <p id="aeroporto-caption" class="legenda oculto"></p>
+    <label class="linha">
+      <span>Bandeira</span>
+      <select id="bandeira">
+        <option value="">Automática (regras da cidade)</option>
+        <option value="1">Bandeira 1</option>
+        <option value="2">Bandeira 2</option>
+      </select>
+    </label>
+    <p id="bandeira-caption" class="legenda oculto">Bandeira fixada manualmente — use em feriados locais ou autorizações que o app não conhece.</p>
+    <label class="linha oculto" id="linha-volumes">
+      <span>Volumes no porta-malas</span>
+      <input type="number" id="volumes" min="0" max="10" value="0">
+    </label>
+    <label class="linha">
+      <span>Nova corrida a cada trecho</span>
+      <input type="checkbox" id="nova-corrida">
+    </label>
+  </section>
+
+  <button id="btn-calcular" class="btn-principal">Calcular corrida</button>
+  <p id="erro" class="erro oculto"></p>
+
+  <section id="selo-desatualizado" class="selo oculto">
+    ⚠️ Resultado desatualizado — o formulário foi alterado depois deste cálculo. Recalcule.
+  </section>
+
+  <div id="mapa" class="oculto"></div>
+  <div id="resultado"></div>
+</main>
+
+<dialog id="dlg-historico">
+  <div class="dlg-topo"><h2>Histórico</h2><button class="btn-fechar">Fechar</button></div>
+  <div id="historico-lista"></div>
+  <div id="historico-detalhe"></div>
+</dialog>
+
+<dialog id="dlg-config">
+  <div class="dlg-topo"><h2>Configurações</h2><button class="btn-fechar">Fechar</button></div>
+  <label class="bloco">
+    <span>Chave da API do Google Maps Platform (opcional)</span>
+    <input type="text" id="chave-google" placeholder="AIza…" autocomplete="off" spellcheck="false">
+  </label>
+  <p class="legenda">Com a chave, as rotas usam o Google com <strong>previsão de trânsito por horário</strong> e autocompletar de qualidade. Sem ela, o app usa OpenStreetMap (gratuito) — o tempo não considera o trânsito. A chave fica salva só neste navegador.</p>
+  <button id="btn-salvar-config" class="btn-principal">Salvar</button>
+</dialog>
+
+<div id="impressao"></div>
+
+<footer class="rodape">
+  Estimativa baseada nas tabelas tarifárias oficiais das 27 capitais. O valor real
+  depende do trajeto efetivamente percorrido e da medição do taxímetro.
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

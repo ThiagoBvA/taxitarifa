@@ -1,0 +1,1567 @@
+{
+  "capitais" : [
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2ForaDoMunicipio" : "trechoFora",
+      "b2SabadoInicioHora" : 13,
+      "centroLat" : -8.05,
+      "centroLon" : -34.9,
+      "cidade" : "Recife",
+      "comum" : {
+        "bandeirada" : 5.12,
+        "horaParada" : 26.67,
+        "kmBandeira1" : 3.35,
+        "kmBandeira2" : 4.05,
+        "taxaVolume" : 0.39
+      },
+      "especial" : {
+        "bandeirada" : 6.21,
+        "horaParada" : 26.67,
+        "kmBandeira1" : 4.07,
+        "kmBandeira2" : 4.85,
+        "taxaVolume" : 0.39
+      },
+      "fonte" : "Prefeitura do Recife \/ CTTU — reajuste e ampliação da Bandeira 2 (fev\/2026)",
+      "fusoID" : "America\/Recife",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 20
+      },
+      "observacoes" : [
+        "Percursos fora do Recife em Bandeira 2 seguem a prática da praça — confirme a regra formal na CTTU (0800 081 1078)."
+      ],
+      "periodosEspeciais" : [
+        {
+          "fim" : "2026-02-18T09:00:00Z",
+          "inicio" : "2026-02-13T03:00:00Z",
+          "nome" : "Carnaval 2026 (autorização CTTU)"
+        }
+      ],
+      "uf" : "PE",
+      "versao" : "CTTU — tabela vigente desde 12\/02\/2026"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2SabadoInicioHora" : 0,
+      "centroLat" : -3.1,
+      "centroLon" : -60.02,
+      "cidade" : "Manaus",
+      "comum" : {
+        "bandeirada" : 5,
+        "horaParada" : 48,
+        "kmBandeira1" : 3.12,
+        "kmBandeira2" : 4.14,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Prefeitura de Manaus (regras: Lei 3.378\/2024 e Decreto 6.242\/2025)",
+      "fusoID" : "America\/Manaus",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 22
+      },
+      "observacoes" : [
+        "Sábado é Bandeira 2 o dia inteiro em Manaus.",
+        "Última tabela de valores localizada é de 2022 — confirme antes de usar."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "AM",
+      "versao" : "Decreto 5.330\/2022 — vigente desde 20\/06\/2022"
+    },
+    {
+      "b2DomingoIntegral" : false,
+      "b2Feriados" : true,
+      "centroLat" : -1.46,
+      "centroLon" : -48.49,
+      "cidade" : "Belém",
+      "comum" : {
+        "bandeirada" : 5.61,
+        "horaParada" : 27.66,
+        "kmBandeira1" : 4.03,
+        "kmBandeira2" : 4.84,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Prefeitura de Belém \/ SeMOB (tabelas taximétricas oficiais)",
+      "fusoID" : "America\/Belem",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 20
+      },
+      "observacoes" : [
+        "Regras de sábado\/domingo não confirmadas nas fontes de Belém — o cálculo aplica apenas a janela noturna, feriados e dezembro; confirme na SeMOB."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "PA",
+      "versao" : "SeMOB — tabela vigente desde ago\/2025 (reajuste de 36% no km)"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2SabadoInicioHora" : 14,
+      "centroLat" : -8.76,
+      "centroLon" : -63.9,
+      "cidade" : "Porto Velho",
+      "comum" : {
+        "bandeirada" : 6.5,
+        "horaParada" : 42.9,
+        "kmBandeira1" : 2.75,
+        "kmBandeira2" : 3.3,
+        "taxaVolume" : 3.5
+      },
+      "fonte" : "Prefeitura de Porto Velho (PDF oficial no SAPL da Câmara)",
+      "fusoID" : "America\/Porto_Velho",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 22
+      },
+      "observacoes" : [
+        "Volume: R$ 3,50 por bagagem acima de 60×40×20 cm.",
+        "Última tabela localizada é de 2022 — confirme antes de usar.",
+        "Fora do perímetro urbano a tarifa é convencionada entre as partes (Decreto 13.847\/2015) — combine o preço antes; a estimativa usa o taxímetro normal."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "RO",
+      "versao" : "Decreto 18.545\/2022 — vigente desde 01\/11\/2022"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2ForaDoMunicipio" : "trechoFora",
+      "centroLat" : -9.97,
+      "centroLon" : -67.81,
+      "cidade" : "Rio Branco",
+      "comum" : {
+        "bandeirada" : 6.5,
+        "horaParada" : 36.74,
+        "kmBandeira1" : 5.51,
+        "kmBandeira2" : 6.61,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Prefeitura de Rio Branco \/ RBTRANS",
+      "fusoID" : "America\/Rio_Branco",
+      "mesesIntegraisB2" : [
+
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 22
+      },
+      "observacoes" : [
+        "O decreto fixa os valores mas não os horários da Bandeira 2; aplicada a regra usual (22h–6h, domingos e feriados) — confirme na RBTRANS.",
+        "Bandeira 2 nos percursos fora do perímetro urbano (Lei 343\/1982, art. 24, §1º, b) — o app aproxima pela divisa do município."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "AC",
+      "versao" : "Decreto 3.405\/2025 — vigente desde dez\/2025"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2SabadoInicioHora" : 13,
+      "centroLat" : 2.82,
+      "centroLon" : -60.67,
+      "cidade" : "Boa Vista",
+      "comum" : {
+        "bandeirada" : 5.4,
+        "horaParada" : 54,
+        "kmBandeira1" : 5.4,
+        "kmBandeira2" : 6.75,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Prefeitura de Boa Vista (regras: Decreto 111-E\/2010, art. 33)",
+      "fusoID" : "America\/Boa_Vista",
+      "mesesIntegraisB2" : [
+
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 20
+      },
+      "observacoes" : [
+        "Em Boa Vista o km da Bandeira 1 tem o mesmo valor da bandeirada (R$ 5,40).",
+        "Retorno de até 30% em corridas com origem em Boa Vista que saem do município (Decreto 111-E\/2010, art. 32, §2º)."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "retornoForaMunicipio" : 30,
+      "uf" : "RR",
+      "versao" : "Decreto 124-E\/2022 — vigente desde 02\/01\/2023"
+    },
+    {
+      "b2DomingoIntegral" : false,
+      "b2Feriados" : false,
+      "centroLat" : 0.03,
+      "centroLon" : -51.07,
+      "cidade" : "Macapá",
+      "comum" : {
+        "bandeirada" : 4.15,
+        "horaParada" : 32,
+        "kmBandeira1" : 3,
+        "kmBandeira2" : 3.6,
+        "taxaVolume" : 0
+      },
+      "fonte" : "CTMac \/ Prefeitura de Macapá",
+      "fusoID" : "America\/Belem",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "observacoes" : [
+        "Só foi confirmada a Bandeira 2 integral de dezembro; as demais janelas (noite, fim de semana, feriados) não foram localizadas — fora de dezembro o cálculo usa Bandeira 1. Confirme na CTMac.",
+        "Tarifa sem reajuste desde 2013."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "AP",
+      "versao" : "Tabela de 2013 — última localizada (confirmada vigente pelo Ipem-AP em jan\/2025)"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2SabadoInicioHora" : 12,
+      "centroLat" : -10.24,
+      "centroLon" : -48.36,
+      "cidade" : "Palmas",
+      "comum" : {
+        "bandeirada" : 4.1,
+        "horaParada" : 25,
+        "kmBandeira1" : 3.1,
+        "kmBandeira2" : 3.7,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Prefeitura de Palmas \/ ARP",
+      "fusoID" : "America\/Araguaina",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 22
+      },
+      "observacoes" : [
+        "Tarifa sem reajuste desde fev\/2015; em mai\/2026 a Prefeitura instituiu comissão de revisão tarifária — pode haver reajuste em breve."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "TO",
+      "versao" : "Decreto 962\/2015 — última atualização (confirmado pelo Decreto 2.906\/2026)"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2ForaDoMunicipio" : "corridaInteira",
+      "b2SabadoInicioHora" : 0,
+      "centroLat" : -12.97,
+      "centroLon" : -38.5,
+      "cidade" : "Salvador",
+      "comum" : {
+        "bandeirada" : 6.47,
+        "horaParada" : 32.33,
+        "kmBandeira1" : 3.23,
+        "kmBandeira2" : 4.52,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Prefeitura de Salvador \/ Semob (DOM 22\/01\/2026)",
+      "fusoID" : "America\/Bahia",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 21
+      },
+      "observacoes" : [
+        "Bandeira 2 também com mais de 3 passageiros — o app não modela essa hipótese.",
+        "Sábado é Bandeira 2 o dia inteiro em Salvador.",
+        "Corrida com origem\/destino em outro município corre INTEIRA em Bandeira 2 (Lei 9.283\/2017, art. 61, II, c)."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "regraAeroporto" : {
+        "bandeira2" : {
+
+        }
+      },
+      "uf" : "BA",
+      "versao" : "Semob — tabela vigente desde 23\/01\/2026"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2SabadoInicioHora" : 13,
+      "centroLat" : -3.73,
+      "centroLon" : -38.52,
+      "cidade" : "Fortaleza",
+      "comum" : {
+        "bandeirada" : 6.82,
+        "horaParada" : 40.59,
+        "kmBandeira1" : 4.06,
+        "kmBandeira2" : 5.28,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Prefeitura de Fortaleza \/ Etufor",
+      "fusoID" : "America\/Fortaleza",
+      "mesesIntegraisB2" : [
+
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 20
+      },
+      "observacoes" : [
+        "O táxi especial de Fortaleza cobra por zonas fixas (R$ 40,59 a R$ 81,18), não por taxímetro — use a modalidade comum no app."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "CE",
+      "versao" : "Etufor — tabela vigente desde 19\/01\/2026 (Decreto 16.574\/2026)"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2SabadoInicioHora" : 12,
+      "centroLat" : -2.53,
+      "centroLon" : -44.3,
+      "cidade" : "São Luís",
+      "comum" : {
+        "bandeirada" : 4.5,
+        "horaParada" : 14.5,
+        "kmBandeira1" : 2.8,
+        "kmBandeira2" : 3.3,
+        "taxaVolume" : 2.7
+      },
+      "fonte" : "Prefeitura de São Luís",
+      "fusoID" : "America\/Fortaleza",
+      "mesesIntegraisB2" : [
+
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 20
+      },
+      "observacoes" : [
+        "Atenção: a última tabela oficial localizada é de 2016; em 2025\/2026 a prefeitura ainda avaliava reajuste. Confirme os valores antes de usar.",
+        "Volume: R$ 2,70 para bagagem acima de 60 cm (até 60 kg)."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "MA",
+      "versao" : "Decreto 47.925\/2016 — última tabela oficial localizada (defasada)"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2SabadoInicioHora" : 12,
+      "centroLat" : -5.09,
+      "centroLon" : -42.8,
+      "cidade" : "Teresina",
+      "comum" : {
+        "bandeirada" : 4.5,
+        "horaParada" : 23.59,
+        "kmBandeira1" : 3.25,
+        "kmBandeira2" : 3.9,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Prefeitura de Teresina \/ STRANS (DOM oficial; regras: Decreto 15.308\/2015)",
+      "fusoID" : "America\/Fortaleza",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 20
+      },
+      "observacoes" : [
+        "O acréscimo de 40% do aeroporto vale para corridas com ORIGEM no aeroporto (Portaria STRANS 5\/2016)."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "regraAeroporto" : {
+        "acrescimoPercentual" : {
+          "_0" : 40
+        }
+      },
+      "uf" : "PI",
+      "versao" : "Decreto 22.935\/2022 (DOM 3.359) — sem reajuste posterior até jul\/2026"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2ForaDoMunicipio" : "trechoFora",
+      "centroLat" : -5.79,
+      "centroLon" : -35.21,
+      "cidade" : "Natal",
+      "comum" : {
+        "bandeirada" : 5.32,
+        "horaParada" : 33.54,
+        "kmBandeira1" : 3.29,
+        "kmBandeira2" : 4.59,
+        "taxaVolume" : 1.93
+      },
+      "especial" : {
+        "bandeirada" : 14.55,
+        "horaParada" : 78,
+        "kmBandeira1" : 7.68,
+        "kmBandeira2" : 10.68,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Prefeitura do Natal \/ STTU (Portaria 175\/2025, republicada no DOM de 30\/11\/2025; cronograma de aferição: Portaria IPEM-RN 14\/2026)",
+      "fusoID" : "America\/Fortaleza",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "noturnaB2" : {
+        "fimHora" : 5,
+        "inicioHora" : 22
+      },
+      "observacoes" : [
+        "Serviço especial = táxi ambulância da tabela oficial da STTU (Portaria 175\/2025, art. 2º — valores mantidos).",
+        "Reajuste de 9,71% (IPCA desde 2023): bandeirada de R$ 4,85 para R$ 5,32; km B1 de R$ 3,00 para R$ 3,29; km B2 de R$ 4,18 para R$ 4,59; hora parada de R$ 30,55 para R$ 33,54. A troca dos taxímetros seguiu cronograma do IPEM-RN entre 05\/03 e 05\/04\/2026.",
+        "Volume: R$ 1,93 para carga\/bagagem acima de 10 kg.",
+        "Bandeira 2 nos percursos fora do perímetro urbano (Decreto 2.954\/1984, art. 38) — o app aproxima pela divisa do município."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "RN",
+      "versao" : "Portaria 175\/2025-STTU\/GS (DOM 30\/11\/2025) — taxímetros atualizados a partir de 05\/03\/2026"
+    },
+    {
+      "b2DomingoIntegral" : false,
+      "b2Feriados" : false,
+      "b2SabadoInicioHora" : 18,
+      "centroLat" : -7.12,
+      "centroLon" : -34.86,
+      "cidade" : "João Pessoa",
+      "comum" : {
+        "bandeirada" : 5.5,
+        "horaParada" : 35,
+        "kmBandeira1" : 3.5,
+        "kmBandeira2" : 4.5,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Semob João Pessoa (janelas de B2 da página oficial; valores via imprensa)",
+      "fusoID" : "America\/Fortaleza",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 20
+      },
+      "observacoes" : [
+        "Janelas conforme a página oficial da Semob-JP: dias úteis 20h–6h; sábados a partir das 18h; domingos e feriados só na madrugada (0h–6h); dezembro o mês inteiro.",
+        "A imprensa local chegou a divulgar Bandeira 2 apenas em dezembro — prevaleceu a página oficial da Semob-JP.",
+        "Tabela oficial de valores não localizada online — valores confirmados pela imprensa especializada; confira no taxímetro."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "PB",
+      "versao" : "Semob-JP — reajuste publicado no DOM de 14\/05\/2025"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "centroLat" : -9.65,
+      "centroLon" : -35.73,
+      "cidade" : "Maceió",
+      "comum" : {
+        "bandeirada" : 4.79,
+        "horaParada" : 15.82,
+        "kmBandeira1" : 3.34,
+        "kmBandeira2" : 4,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Prefeitura de Maceió \/ DMTT",
+      "fusoID" : "America\/Maceio",
+      "mesesIntegraisB2" : [
+
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 22
+      },
+      "observacoes" : [
+        "As fontes oficiais não preveem regra especial para sábados nem para dezembro."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "AL",
+      "versao" : "DMTT — tabela vigente desde 26\/02\/2025"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2SabadoInicioHora" : 12,
+      "centroLat" : -10.92,
+      "centroLon" : -37.07,
+      "cidade" : "Aracaju",
+      "comum" : {
+        "bandeirada" : 5.3,
+        "horaParada" : 20,
+        "kmBandeira1" : 3.5,
+        "kmBandeira2" : 4.2,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Prefeitura de Aracaju \/ SMTT",
+      "fusoID" : "America\/Maceio",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 22
+      },
+      "observacoes" : [
+        "Horários da Bandeira 2 vêm de comunicados oficiais de anos anteriores (regra estrutural) — confirme no taxímetro."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "SE",
+      "versao" : "SMTT — tabela vigente desde 11\/03\/2025"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2SabadoInicioHora" : 0,
+      "centroLat" : -15.79,
+      "centroLon" : -47.88,
+      "cidade" : "Brasília",
+      "comum" : {
+        "bandeirada" : 6.59,
+        "horaParada" : 39.91,
+        "kmBandeira1" : 3.59,
+        "kmBandeira2" : 4.61,
+        "taxaVolume" : 0
+      },
+      "fonte" : "GDF \/ SINJ-DF — Decreto 46.615\/2024 e Lei distrital 5.323\/2014",
+      "fusoID" : "America\/Sao_Paulo",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 20
+      },
+      "observacoes" : [
+        "Sábado é Bandeira 2 o dia inteiro no DF.",
+        "Bandeira 2 também em vias não pavimentadas e com mais de 3 passageiros — o app não modela essas hipóteses.",
+        "Excesso de bagagem é cobrado em 10% do valor da corrida (limite de 50%) — o app não soma esse percentual."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "regraAeroporto" : {
+        "bandeira2" : {
+
+        }
+      },
+      "uf" : "DF",
+      "versao" : "Semob-DF — tabela vigente desde 06\/12\/2024 (Decreto 46.615\/2024)"
+    },
+    {
+      "b2DomingoInicioHora" : 13,
+      "b2DomingoIntegral" : false,
+      "b2Feriados" : false,
+      "b2FeriadosInicioHora" : 13,
+      "b2ForaDoMunicipio" : "trechoFora",
+      "b2SabadoInicioHora" : 13,
+      "centroLat" : -16.68,
+      "centroLon" : -49.25,
+      "cidade" : "Goiânia",
+      "comum" : {
+        "bandeirada" : 5.71,
+        "horaParada" : 28.62,
+        "kmBandeira1" : 3.43,
+        "kmBandeira2" : 4.29,
+        "taxaVolume" : 2.74
+      },
+      "fonte" : "Prefeitura de Goiânia — Diário Oficial do Município",
+      "fusoID" : "America\/Sao_Paulo",
+      "mesesIntegraisB2" : [
+
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 20
+      },
+      "observacoes" : [
+        "Em Goiânia, fins de semana e feriados só entram em Bandeira 2 a partir das 13h.",
+        "Volume: R$ 2,74 por volume adicional (1 mala + 2 volumes de mão são gratuitos).",
+        "Bandeira 2 após ultrapassar o limite territorial do município (Decreto 2.096\/2015, art. 2º, IV)."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "GO",
+      "versao" : "Tabela vigente desde 13\/03\/2026 (Decreto 37\/2026, DOM 8.740)"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2SabadoInicioHora" : 13,
+      "centroLat" : -20.47,
+      "centroLon" : -54.62,
+      "cidade" : "Campo Grande",
+      "comum" : {
+        "bandeirada" : 5,
+        "horaParada" : 30.91,
+        "kmBandeira1" : 3.86,
+        "kmBandeira2" : 4.41,
+        "taxaVolume" : 0.46
+      },
+      "especial" : {
+        "bandeirada" : 9,
+        "horaParada" : 30.91,
+        "kmBandeira1" : 3.86,
+        "kmBandeira2" : 4.41,
+        "taxaVolume" : 0.46
+      },
+      "fonte" : "Prefeitura de Campo Grande \/ Agereg \/ Agetran",
+      "fusoID" : "America\/Campo_Grande",
+      "mesesIntegraisB2" : [
+
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 22
+      },
+      "observacoes" : [
+        "Serviço especial = táxi do ponto do Aeroporto (só a bandeirada difere).",
+        "Volume: R$ 0,46 acima de 70×40×20 cm."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "regraAeroporto" : {
+        "servicoEspecial" : {
+
+        }
+      },
+      "uf" : "MS",
+      "versao" : "Agereg — tabela vigente desde 12\/09\/2025 (Diogrande, ed. extra)"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2ForaDoMunicipio" : "trechoFora",
+      "b2SabadoInicioHora" : 12,
+      "centroLat" : -15.6,
+      "centroLon" : -56.1,
+      "cidade" : "Cuiabá",
+      "comum" : {
+        "bandeirada" : 6,
+        "horaParada" : 25,
+        "kmBandeira1" : 4.3,
+        "kmBandeira2" : 6,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Prefeitura de Cuiabá \/ Semob (decreto publicado no Diário Oficial do Município em 17\/07\/2026)",
+      "fusoID" : "America\/Cuiaba",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 20
+      },
+      "observacoes" : [
+        "Reajuste de jul\/2026 (Decreto 12.245\/2026), o primeiro desde 2013: bandeirada de R$ 4,80 para R$ 6,00; km B1 de R$ 2,82 para R$ 4,30; km B2 de R$ 3,95 para R$ 6,00; hora parada de R$ 18,98 para R$ 25,00.",
+        "Os taxistas tiveram 60 dias a partir de 17\/07\/2026 para aferir o taxímetro — até lá alguns carros ainda podiam cobrar a tabela antiga na Bandeira 2.",
+        "A Bandeira 2 de dezembro é autorizada por decreto anual (confirmada para dez\/2025).",
+        "Bandeira 2 ao sair do perímetro urbano ou do município (Decreto 2.359\/1991, art. 32, II) — o app aproxima pela divisa do município."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "MT",
+      "versao" : "Decreto 12.245\/2026 — vigente desde 16\/07\/2026"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "centroLat" : -23.55,
+      "centroLon" : -46.63,
+      "cidade" : "São Paulo",
+      "comum" : {
+        "bandeirada" : 6.55,
+        "horaParada" : 55.5,
+        "kmBandeira1" : 4.8,
+        "kmBandeira2" : 6.24,
+        "taxaVolume" : 0
+      },
+      "especial" : {
+        "bandeirada" : 9.83,
+        "horaParada" : 83.25,
+        "kmBandeira1" : 7.2,
+        "kmBandeira2" : 9.36,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Prefeitura de São Paulo \/ Secretaria de Mobilidade e Trânsito",
+      "fusoID" : "America\/Sao_Paulo",
+      "mesesIntegraisB2" : [
+
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 20
+      },
+      "observacoes" : [
+        "Serviço especial = categoria Luxo.",
+        "A “hora parada” é a tarifa horária, cobrada parado ou abaixo de 15 km\/h.",
+        "Adicional metropolitano de 50% sobre o taxímetro quando o táxi não retorna com passageiro (Portaria 105\/14-SMT.GAB) — se houver retorno com passageiro, não se cobra."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "retornoForaMunicipio" : 50,
+      "uf" : "SP",
+      "versao" : "SMT — tabela vigente desde 11\/08\/2025 (Portaria SMT.GAB 43\/2025)"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "centroLat" : -22.91,
+      "centroLon" : -43.2,
+      "cidade" : "Rio de Janeiro",
+      "comum" : {
+        "bandeirada" : 6.3,
+        "horaParada" : 48.51,
+        "kmBandeira1" : 3.85,
+        "kmBandeira2" : 4.62,
+        "taxaVolume" : 3.85
+      },
+      "especial" : {
+        "bandeirada" : 8.5,
+        "horaParada" : 82.53,
+        "kmBandeira1" : 6.55,
+        "kmBandeira2" : 6.55,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Secretaria Municipal de Transportes do Rio de Janeiro",
+      "fusoID" : "America\/Sao_Paulo",
+      "mesesIntegraisB2" : [
+
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 21
+      },
+      "observacoes" : [
+        "Serviço especial = táxi executivo (km único de R$ 6,55 nas duas bandeiras).",
+        "Taxa de R$ 3,85 por volume acima de 60×30 cm (táxi comum).",
+        "A Tarifa II também vale em vias com subidas íngremes — o app não modela essa hipótese."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "RJ",
+      "versao" : "SMTR — tabela vigente desde 02\/01\/2026 (Resolução 3.893\/2025)"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2SabadoInicioHora" : 14,
+      "centroLat" : -19.92,
+      "centroLon" : -43.94,
+      "cidade" : "Belo Horizonte",
+      "comum" : {
+        "bandeirada" : 5.4,
+        "horaParada" : 39,
+        "kmBandeira1" : 4.5,
+        "kmBandeira2" : 5.4,
+        "taxaVolume" : 1.8
+      },
+      "fonte" : "Prefeitura de Belo Horizonte \/ SUMOB (portaria no DOM de 06\/08\/2026)",
+      "fusoID" : "America\/Sao_Paulo",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 22
+      },
+      "observacoes" : [
+        "Volume: R$ 1,80 acima de 60 cm; carrinho de supermercado R$ 2,40 (inalterados no reajuste de ago\/2026).",
+        "Reajuste de 08\/08\/2026 (8,6% numa corrida média de 5 km): bandeirada de R$ 5,15 para R$ 5,40; km B1 de R$ 4,11 para R$ 4,50; km B2 de R$ 4,92 para R$ 5,40; hora parada de R$ 35,48 para R$ 39,00.",
+        "A liberação da Bandeira 2 em dezembro é renovada ano a ano pela Prefeitura (confirmada para dez\/2025).",
+        "Retorno de 50% só para municípios NÃO conveniados (Portaria SUMOB 066\/2023, art. 82) — sem retorno para Contagem, Ibirité, Sabará, Ribeirão das Neves, Esmeraldas e Aeroporto de Confins."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "retornoForaMunicipio" : 50,
+      "uf" : "MG",
+      "versao" : "Prefeitura de BH — tabela vigente desde 08\/08\/2026"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2ForaDoMunicipio" : "trechoFora",
+      "b2SabadoInicioHora" : 14,
+      "centroLat" : -20.32,
+      "centroLon" : -40.34,
+      "cidade" : "Vitória",
+      "comum" : {
+        "bandeirada" : 6.2,
+        "horaParada" : 21,
+        "kmBandeira1" : 4,
+        "kmBandeira2" : 4.8,
+        "taxaVolume" : 1
+      },
+      "fonte" : "Prefeitura de Vitória \/ Setran",
+      "fusoID" : "America\/Sao_Paulo",
+      "mesesIntegraisB2" : [
+
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 20
+      },
+      "observacoes" : [
+        "Última tabela oficial localizada é de 2022 — confirme os valores antes de usar."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "ES",
+      "versao" : "Setran — tabela de 2022 (última oficial localizada)"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2SabadoInicioHora" : 13,
+      "centroLat" : -25.43,
+      "centroLon" : -49.27,
+      "cidade" : "Curitiba",
+      "comum" : {
+        "bandeirada" : 5.4,
+        "horaParada" : 33.43,
+        "kmBandeira1" : 4.06,
+        "kmBandeira2" : 5,
+        "taxaVolume" : 0
+      },
+      "especial" : {
+        "bandeirada" : 7.15,
+        "horaParada" : 43.87,
+        "kmBandeira1" : 5.41,
+        "kmBandeira2" : 6.66,
+        "taxaVolume" : 0
+      },
+      "fonte" : "URBS \/ Prefeitura de Curitiba",
+      "fusoID" : "America\/Sao_Paulo",
+      "mesesIntegraisB2" : [
+        12
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 20
+      },
+      "observacoes" : [
+        "Serviço especial = táxi executivo.",
+        "Em dezembro a Bandeira 2 vale o dia todo por lei municipal (o taxista pode optar pela B1).",
+        "Retorno de até 30% em corridas com origem em Curitiba que saem do município (Decreto 1.959\/2012, art. 25, §3º)."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "retornoForaMunicipio" : 30,
+      "uf" : "PR",
+      "versao" : "URBS — tabela vigente desde 01\/01\/2026 (Decreto 2.652\/2025)"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "centroLat" : -27.6,
+      "centroLon" : -48.55,
+      "cidade" : "Florianópolis",
+      "comum" : {
+        "bandeirada" : 7,
+        "horaParada" : 45,
+        "kmBandeira1" : 4.3,
+        "kmBandeira2" : 5.1,
+        "taxaVolume" : 0
+      },
+      "especial" : {
+        "bandeirada" : 10.5,
+        "horaParada" : 45,
+        "kmBandeira1" : 4.8,
+        "kmBandeira2" : 5.85,
+        "taxaVolume" : 0
+      },
+      "fonte" : "Prefeitura de Florianópolis (aprovação Conmurb)",
+      "fusoID" : "America\/Sao_Paulo",
+      "mesesIntegraisB2" : [
+
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 22
+      },
+      "observacoes" : [
+        "Serviço especial = categoria aeroporto.",
+        "A janela da Bandeira 2 não consta das fontes oficiais localizadas; aplicada a regra usual (22h–6h, domingos e feriados) — confirme no taxímetro."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "SC",
+      "versao" : "Decreto 28.637\/2025 — vigente desde 10\/10\/2025"
+    },
+    {
+      "b2DomingoIntegral" : true,
+      "b2Feriados" : true,
+      "b2SabadoInicioHora" : 15,
+      "centroLat" : -30.03,
+      "centroLon" : -51.22,
+      "cidade" : "Porto Alegre",
+      "comum" : {
+        "bandeirada" : 7.24,
+        "horaParada" : 25.56,
+        "kmBandeira1" : 3.62,
+        "kmBandeira2" : 4.71,
+        "taxaVolume" : 0
+      },
+      "fonte" : "EPTC \/ Prefeitura de Porto Alegre",
+      "fusoID" : "America\/Sao_Paulo",
+      "mesesIntegraisB2" : [
+
+      ],
+      "noturnaB2" : {
+        "fimHora" : 6,
+        "inicioHora" : 20
+      },
+      "observacoes" : [
+        "Bagagem comum não é cobrada; volumes grandes (dimensões somadas acima de 1,72 m) podem custar até R$ 10,15 mediante acordo prévio — o app não soma esse valor."
+      ],
+      "periodosEspeciais" : [
+
+      ],
+      "uf" : "RS",
+      "versao" : "EPTC — tabela vigente desde 19\/02\/2026 (Decreto 23.670\/2026)"
+    }
+  ],
+  "feriadosLocais" : {
+    "Aracaju-SE" : [
+      {
+        "dia" : 17,
+        "mes" : 3,
+        "nome" : "Aniversário de Aracaju",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 24,
+        "mes" : 6,
+        "nome" : "São João",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 8,
+        "mes" : 7,
+        "nome" : "Emancipação de Sergipe",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 8,
+        "mes" : 12,
+        "nome" : "N. Sra. da Conceição (padroeira)",
+        "tipo" : "municipal"
+      }
+    ],
+    "Belo Horizonte-MG" : [
+      {
+        "dia" : 15,
+        "mes" : 8,
+        "nome" : "Assunção de Nossa Senhora",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 8,
+        "mes" : 12,
+        "nome" : "Imaculada Conceição",
+        "tipo" : "municipal"
+      }
+    ],
+    "Belém-PA" : [
+      {
+        "dia" : 15,
+        "mes" : 8,
+        "nome" : "Adesão do Pará ao Império",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 12,
+        "mes" : 1,
+        "nome" : "Aniversário de Belém",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 8,
+        "mes" : 12,
+        "nome" : "N. Sra. da Conceição",
+        "tipo" : "municipal"
+      }
+    ],
+    "Boa Vista-RR" : [
+      {
+        "dia" : 5,
+        "mes" : 10,
+        "nome" : "Criação de Roraima",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 20,
+        "mes" : 1,
+        "nome" : "São Sebastião",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 29,
+        "mes" : 6,
+        "nome" : "São Pedro",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 9,
+        "mes" : 7,
+        "nome" : "Aniversário de Boa Vista",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 8,
+        "mes" : 12,
+        "nome" : "N. Sra. da Conceição",
+        "tipo" : "municipal"
+      }
+    ],
+    "Brasília-DF" : [
+      {
+        "dia" : 30,
+        "mes" : 11,
+        "nome" : "Dia do Evangélico",
+        "tipo" : "estadual"
+      }
+    ],
+    "Campo Grande-MS" : [
+      {
+        "dia" : 11,
+        "mes" : 10,
+        "nome" : "Criação de Mato Grosso do Sul",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 13,
+        "mes" : 6,
+        "nome" : "Santo Antônio (padroeiro)",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 26,
+        "mes" : 8,
+        "nome" : "Aniversário de Campo Grande",
+        "tipo" : "municipal"
+      }
+    ],
+    "Cuiabá-MT" : [
+      {
+        "dia" : 8,
+        "mes" : 4,
+        "nome" : "Aniversário de Cuiabá",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 8,
+        "mes" : 12,
+        "nome" : "N. Sra. da Conceição",
+        "tipo" : "municipal"
+      }
+    ],
+    "Curitiba-PR" : [
+      {
+        "dia" : 8,
+        "mes" : 9,
+        "nome" : "N. Sra. da Luz dos Pinhais (padroeira)",
+        "tipo" : "municipal"
+      }
+    ],
+    "Florianópolis-SC" : [
+      {
+        "dia" : 23,
+        "mes" : 3,
+        "nome" : "Aniversário de Florianópolis",
+        "tipo" : "municipal"
+      }
+    ],
+    "Fortaleza-CE" : [
+      {
+        "dia" : 19,
+        "mes" : 3,
+        "nome" : "São José",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 25,
+        "mes" : 3,
+        "nome" : "Data Magna do Ceará",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 13,
+        "mes" : 4,
+        "nome" : "Aniversário de Fortaleza",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 15,
+        "mes" : 8,
+        "nome" : "N. Sra. da Assunção (padroeira)",
+        "tipo" : "municipal"
+      }
+    ],
+    "Goiânia-GO" : [
+      {
+        "dia" : 24,
+        "mes" : 5,
+        "nome" : "N. Sra. Auxiliadora (padroeira)",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 24,
+        "mes" : 10,
+        "nome" : "Aniversário de Goiânia",
+        "tipo" : "municipal"
+      }
+    ],
+    "João Pessoa-PB" : [
+      {
+        "dia" : 24,
+        "mes" : 6,
+        "nome" : "São João",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 5,
+        "mes" : 8,
+        "nome" : "Fundação da Paraíba (N. Sra. das Neves)",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 8,
+        "mes" : 12,
+        "nome" : "N. Sra. da Conceição",
+        "tipo" : "municipal"
+      }
+    ],
+    "Macapá-AP" : [
+      {
+        "dia" : 19,
+        "mes" : 3,
+        "nome" : "São José (padroeiro do AP)",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 15,
+        "mes" : 5,
+        "nome" : "Dia de Cabralzinho",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 13,
+        "mes" : 9,
+        "nome" : "Criação do ex-Território do Amapá",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 4,
+        "mes" : 2,
+        "nome" : "Aniversário de Macapá",
+        "tipo" : "municipal"
+      }
+    ],
+    "Maceió-AL" : [
+      {
+        "dia" : 24,
+        "mes" : 6,
+        "nome" : "São João",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 29,
+        "mes" : 6,
+        "nome" : "São Pedro",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 27,
+        "mes" : 8,
+        "nome" : "N. Sra. dos Prazeres (padroeira)",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 16,
+        "mes" : 9,
+        "nome" : "Emancipação de Alagoas",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 30,
+        "mes" : 11,
+        "nome" : "Dia do Evangélico",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 8,
+        "mes" : 12,
+        "nome" : "N. Sra. da Conceição",
+        "tipo" : "municipal"
+      }
+    ],
+    "Manaus-AM" : [
+      {
+        "dia" : 5,
+        "mes" : 9,
+        "nome" : "Aniversário do Amazonas",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 8,
+        "mes" : 12,
+        "nome" : "N. Sra. da Conceição",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 24,
+        "mes" : 10,
+        "nome" : "Aniversário de Manaus",
+        "tipo" : "municipal"
+      }
+    ],
+    "Natal-RN" : [
+      {
+        "dia" : 6,
+        "mes" : 1,
+        "nome" : "Santos Reis",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 3,
+        "mes" : 10,
+        "nome" : "Mártires de Cunhaú e Uruaçu",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 21,
+        "mes" : 11,
+        "nome" : "N. Sra. da Apresentação (padroeira)",
+        "tipo" : "municipal"
+      }
+    ],
+    "Palmas-TO" : [
+      {
+        "dia" : 8,
+        "mes" : 9,
+        "nome" : "N. Sra. da Natividade (padroeira do TO)",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 5,
+        "mes" : 10,
+        "nome" : "Criação do Tocantins",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 19,
+        "mes" : 3,
+        "nome" : "São José (padroeiro de Palmas)",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 20,
+        "mes" : 5,
+        "nome" : "Aniversário de Palmas",
+        "tipo" : "municipal"
+      }
+    ],
+    "Porto Alegre-RS" : [
+      {
+        "dia" : 20,
+        "mes" : 9,
+        "nome" : "Revolução Farroupilha",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 2,
+        "mes" : 2,
+        "nome" : "N. Sra. dos Navegantes",
+        "tipo" : "municipal"
+      }
+    ],
+    "Porto Velho-RO" : [
+      {
+        "dia" : 4,
+        "mes" : 1,
+        "nome" : "Criação de Rondônia",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 24,
+        "mes" : 1,
+        "nome" : "Instalação do Município",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 2,
+        "mes" : 10,
+        "nome" : "Aniversário de Porto Velho",
+        "tipo" : "municipal"
+      }
+    ],
+    "Recife-PE" : [
+      {
+        "dia" : 6,
+        "mes" : 3,
+        "nome" : "Revolução Pernambucana (Data Magna)",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 24,
+        "mes" : 6,
+        "nome" : "São João",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 16,
+        "mes" : 7,
+        "nome" : "N. Sra. do Carmo (padroeira)",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 8,
+        "mes" : 12,
+        "nome" : "N. Sra. da Conceição",
+        "tipo" : "municipal"
+      }
+    ],
+    "Rio Branco-AC" : [
+      {
+        "dia" : 23,
+        "mes" : 1,
+        "nome" : "Dia do Evangélico",
+        "tipo" : "estadual"
+      },
+      {
+        "ano" : 2026,
+        "dia" : 22,
+        "mes" : 1,
+        "nome" : "Dia do Católico",
+        "tipo" : "estadual"
+      },
+      {
+        "ano" : 2027,
+        "dia" : 22,
+        "mes" : 1,
+        "nome" : "Dia do Católico",
+        "tipo" : "estadual"
+      },
+      {
+        "ano" : 2026,
+        "dia" : 8,
+        "mes" : 3,
+        "nome" : "Dia da Mulher",
+        "tipo" : "estadual"
+      },
+      {
+        "ano" : 2027,
+        "dia" : 12,
+        "mes" : 3,
+        "nome" : "Dia da Mulher",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 15,
+        "mes" : 6,
+        "nome" : "Aniversário do Acre",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 6,
+        "mes" : 8,
+        "nome" : "Revolução Acreana",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 5,
+        "mes" : 9,
+        "nome" : "Dia da Amazônia",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 28,
+        "mes" : 12,
+        "nome" : "Aniversário de Rio Branco",
+        "tipo" : "municipal"
+      }
+    ],
+    "Rio de Janeiro-RJ" : [
+      {
+        "dia" : 20,
+        "mes" : 1,
+        "nome" : "São Sebastião (padroeiro)",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 23,
+        "mes" : 4,
+        "nome" : "São Jorge",
+        "tipo" : "municipal"
+      }
+    ],
+    "Salvador-BA" : [
+      {
+        "dia" : 24,
+        "mes" : 6,
+        "nome" : "São João",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 2,
+        "mes" : 7,
+        "nome" : "Independência da Bahia",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 8,
+        "mes" : 12,
+        "nome" : "N. Sra. da Conceição",
+        "tipo" : "municipal"
+      }
+    ],
+    "São Luís-MA" : [
+      {
+        "dia" : 29,
+        "mes" : 6,
+        "nome" : "São Pedro",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 28,
+        "mes" : 7,
+        "nome" : "Adesão do Maranhão ao Império",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 8,
+        "mes" : 9,
+        "nome" : "Natividade de N. Sra. (aniversário da cidade)",
+        "tipo" : "municipal"
+      },
+      {
+        "ano" : 2026,
+        "dia" : 19,
+        "mes" : 10,
+        "nome" : "Dia do Comerciário",
+        "tipo" : "municipal"
+      },
+      {
+        "ano" : 2027,
+        "dia" : 18,
+        "mes" : 10,
+        "nome" : "Dia do Comerciário",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 8,
+        "mes" : 12,
+        "nome" : "N. Sra. da Conceição",
+        "tipo" : "municipal"
+      }
+    ],
+    "São Paulo-SP" : [
+      {
+        "dia" : 9,
+        "mes" : 7,
+        "nome" : "Revolução Constitucionalista",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 25,
+        "mes" : 1,
+        "nome" : "Aniversário de São Paulo",
+        "tipo" : "municipal"
+      }
+    ],
+    "Teresina-PI" : [
+      {
+        "dia" : 16,
+        "mes" : 8,
+        "nome" : "Aniversário de Teresina",
+        "tipo" : "municipal"
+      },
+      {
+        "dia" : 19,
+        "mes" : 10,
+        "nome" : "Dia do Piauí",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 8,
+        "mes" : 12,
+        "nome" : "N. Sra. da Conceição",
+        "tipo" : "municipal"
+      }
+    ],
+    "Vitória-ES" : [
+      {
+        "ano" : 2026,
+        "dia" : 13,
+        "mes" : 4,
+        "nome" : "N. Sra. da Penha (Data Magna do ES)",
+        "tipo" : "estadual"
+      },
+      {
+        "ano" : 2027,
+        "dia" : 5,
+        "mes" : 4,
+        "nome" : "N. Sra. da Penha (Data Magna do ES)",
+        "tipo" : "estadual"
+      },
+      {
+        "dia" : 8,
+        "mes" : 9,
+        "nome" : "N. Sra. da Vitória",
+        "tipo" : "municipal"
+      }
+    ]
+  },
+  "versao" : "embutido-2026-11-03"
+}
