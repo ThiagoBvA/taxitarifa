@@ -158,39 +158,76 @@ function prepararCampoEndereco(container, estado) {
   const caixa = container.querySelector(".sugestoes");
   const resolvido = container.querySelector(".lugar-resolvido");
   let timer = null;
+  let sugestoesAtuais = [];
+  let indiceAtivo = -1;
+
+  const fecharCaixa = () => {
+    caixa.innerHTML = "";
+    sugestoesAtuais = [];
+    indiceAtivo = -1;
+  };
+
+  const destacar = (i) => {
+    indiceAtivo = i;
+    [...caixa.children].forEach((filho, k) => filho.classList.toggle("ativa", k === i));
+    if (i >= 0 && caixa.children[i]) {
+      caixa.children[i].scrollIntoView({ block: "nearest" });
+    }
+  };
+
+  const escolher = async (s) => {
+    fecharCaixa();
+    input.value = s.detalhe ? `${s.rotulo}, ${s.detalhe}` : s.rotulo;
+    estado.texto = input.value;
+    try {
+      estado.lugar = await s.resolver();
+      resolvido.textContent = `📍 ${estado.lugar.nome} — ${estado.lugar.endereco}`;
+    } catch { estado.lugar = null; }
+    marcarDesatualizado();
+  };
 
   input.addEventListener("input", () => {
     estado.texto = input.value;
     if (estado.lugar) { estado.lugar = null; resolvido.textContent = ""; }
     marcarDesatualizado();
     clearTimeout(timer);
-    if (input.value.trim().length < 3) { caixa.innerHTML = ""; return; }
+    if (input.value.trim().length < 3) { fecharCaixa(); return; }
     const atraso = provedorAtivo(cfg) === "google" ? 350 : 1100;
     timer = setTimeout(async () => {
       try {
         const lista = await sugerir(input.value, tabela, cfg);
-        caixa.innerHTML = "";
-        for (const s of lista) {
+        fecharCaixa();
+        sugestoesAtuais = lista;
+        lista.forEach((s, i) => {
           const item = el("div", "sugestao");
           item.appendChild(el("div", null, s.rotulo));
           if (s.detalhe) item.appendChild(el("small", null, s.detalhe));
-          item.addEventListener("mousedown", async (ev) => {
-            ev.preventDefault();
-            caixa.innerHTML = "";
-            input.value = s.detalhe ? `${s.rotulo}, ${s.detalhe}` : s.rotulo;
-            estado.texto = input.value;
-            try {
-              estado.lugar = await s.resolver();
-              resolvido.textContent = `📍 ${estado.lugar.nome} — ${estado.lugar.endereco}`;
-            } catch { estado.lugar = null; }
-            marcarDesatualizado();
-          });
+          item.addEventListener("mousedown", (ev) => { ev.preventDefault(); escolher(s); });
+          item.addEventListener("mousemove", () => destacar(i));
           caixa.appendChild(item);
-        }
-      } catch { caixa.innerHTML = ""; }
+        });
+      } catch { fecharCaixa(); }
     }, atraso);
   });
-  input.addEventListener("blur", () => setTimeout(() => (caixa.innerHTML = ""), 250));
+
+  // Teclado: ↑/↓ navegam o menu (sem rolar a página), Enter escolhe, Esc fecha.
+  input.addEventListener("keydown", (ev) => {
+    if (!sugestoesAtuais.length) return;
+    if (ev.key === "ArrowDown" || ev.key === "Down") {
+      ev.preventDefault();
+      destacar(Math.min(indiceAtivo + 1, sugestoesAtuais.length - 1));
+    } else if (ev.key === "ArrowUp" || ev.key === "Up") {
+      ev.preventDefault();
+      destacar(Math.max(indiceAtivo - 1, 0));
+    } else if (ev.key === "Enter") {
+      ev.preventDefault();
+      escolher(sugestoesAtuais[indiceAtivo >= 0 ? indiceAtivo : 0]);
+    } else if (ev.key === "Escape") {
+      fecharCaixa();
+    }
+  });
+
+  input.addEventListener("blur", () => setTimeout(fecharCaixa, 250));
 }
 
 function adicionarParada() {

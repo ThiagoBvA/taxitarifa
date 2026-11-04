@@ -85,6 +85,14 @@ export async function sugerir(texto, tabela, cfg) {
   if (!r.length) {
     r = await fetchJSON(base, { headers: { "Accept-Language": "pt-BR" } });
   }
+  // Nominatim repete segmentos da mesma via — deduplica pelo nome exibido.
+  const vistos = new Set();
+  r = r.filter(item => {
+    const chave = item.display_name.split(",").slice(0, 4).join(",");
+    if (vistos.has(chave)) return false;
+    vistos.add(chave);
+    return true;
+  });
   return r.map(item => ({
     rotulo: item.display_name.split(",").slice(0, 2).join(",").trim(),
     detalhe: item.display_name.split(",").slice(2, 5).join(",").trim(),
