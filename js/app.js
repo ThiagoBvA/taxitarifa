@@ -192,7 +192,7 @@ function prepararCampoEndereco(container, estado) {
     marcarDesatualizado();
     clearTimeout(timer);
     if (input.value.trim().length < 3) { fecharCaixa(); return; }
-    const atraso = provedorAtivo(cfg) === "google" ? 350 : 1100;
+    const atraso = provedorAtivo(cfg) === "google" ? 350 : 650;
     timer = setTimeout(async () => {
       try {
         const lista = await sugerir(input.value, tabela, cfg);

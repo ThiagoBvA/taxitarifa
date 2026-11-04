@@ -75,7 +75,45 @@ export async function sugerir(texto, tabela, cfg) {
       };
     });
   }
-  // Nominatim (OSM) — primeiro RESTRITO à caixa da capital; se vazio, abre o raio.
+  // Photon (komoot) — geocodificador fuzzy sobre OSM: tolera erro de digitação
+  // e acha POIs por nome parcial ("RioMar", "Shopping Recife"). Viés na capital.
+  try {
+    const urlPhoton = "https://photon.komoot.io/api/?limit=8&lang=default"
+      + `&lat=${tabela.centroLat}&lon=${tabela.centroLon}`
+      + `&q=${encodeURIComponent(texto)}`;
+    const ph = await fetchJSON(urlPhoton);
+    const feats = (ph.features || [])
+      .filter(f => (f.properties.countrycode || "").toUpperCase() === "BR");
+    const vistos = new Set();
+    const out = [];
+    for (const f of feats) {
+      const p = f.properties;
+      const nome = p.name
+        || [p.street, p.housenumber].filter(Boolean).join(", ") || texto;
+      const partes = [];
+      if (p.street && p.name) {
+        partes.push(p.housenumber ? `${p.street}, ${p.housenumber}` : p.street);
+      }
+      for (const campo of [p.district, p.city, p.state]) {
+        if (campo && !partes.includes(campo) && campo !== nome) partes.push(campo);
+      }
+      const detalhe = partes.join(", ");
+      const chave = `${nome}|${detalhe}`;
+      if (vistos.has(chave)) continue;
+      vistos.add(chave);
+      const [lon, lat] = f.geometry.coordinates;
+      out.push({
+        rotulo: nome,
+        detalhe,
+        resolver: async () => ({
+          nome, endereco: detalhe ? `${nome}, ${detalhe}` : nome, lat, lon,
+        }),
+      });
+    }
+    if (out.length) return out.slice(0, 6);
+  } catch { /* Photon fora do ar — cai para o Nominatim */ }
+
+  // Nominatim (OSM) — reserva: primeiro RESTRITO à caixa da capital; se vazio, abre o raio.
   const dLat = 0.35, dLon = 0.35;
   const vb = [tabela.centroLon - dLon, tabela.centroLat - dLat,
               tabela.centroLon + dLon, tabela.centroLat + dLat].join(",");

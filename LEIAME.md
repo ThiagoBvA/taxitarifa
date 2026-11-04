@@ -22,8 +22,10 @@ estática (Cloudflare Pages, GitHub Pages, Netlify).
 
 ## Provedores de rota
 
-- **Sem configurar nada**: OpenStreetMap (Nominatim + OSRM públicos) —
-  gratuito e sem chave, mas o tempo de percurso NÃO considera o trânsito.
+- **Sem configurar nada**: OpenStreetMap — busca de endereços pelo Photon
+  (fuzzy, tolerante a erro de digitação e bom com nomes de lugares; Nominatim
+  como reserva) e rotas pelo OSRM público. Gratuito e sem chave, mas o tempo
+  de percurso NÃO considera o trânsito.
 - **Com chave do Google Maps Platform** (⚙️ no app, salva no navegador):
   rotas com previsão de trânsito por horário (Routes API), alternativas e
   autocompletar de qualidade. Habilitar na chave: Routes API e Places API
