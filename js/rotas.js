@@ -75,13 +75,16 @@ export async function sugerir(texto, tabela, cfg) {
       };
     });
   }
-  // Nominatim (OSM) — viés pela caixa da cidade; uso leve.
+  // Nominatim (OSM) — primeiro RESTRITO à caixa da capital; se vazio, abre o raio.
   const dLat = 0.35, dLon = 0.35;
   const vb = [tabela.centroLon - dLon, tabela.centroLat - dLat,
               tabela.centroLon + dLon, tabela.centroLat + dLat].join(",");
-  const url = "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=0"
+  const base = "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=0"
     + `&countrycodes=br&limit=5&viewbox=${vb}&q=${encodeURIComponent(texto)}`;
-  const r = await fetchJSON(url, { headers: { "Accept-Language": "pt-BR" } });
+  let r = await fetchJSON(`${base}&bounded=1`, { headers: { "Accept-Language": "pt-BR" } });
+  if (!r.length) {
+    r = await fetchJSON(base, { headers: { "Accept-Language": "pt-BR" } });
+  }
   return r.map(item => ({
     rotulo: item.display_name.split(",").slice(0, 2).join(",").trim(),
     detalhe: item.display_name.split(",").slice(2, 5).join(",").trim(),
