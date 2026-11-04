@@ -4,6 +4,10 @@ Mesmo motor tarifário do app nativo, portado para JavaScript com paridade
 comprovada ao centavo (61 testes espelhando os TarifaChecks do Swift:
 `node js/testes.mjs`).
 
+**Publicado em: https://thiagobva.github.io/taxitarifa/** (GitHub Pages,
+repositório público [ThiagoBvA/taxitarifa](https://github.com/ThiagoBvA/taxitarifa);
+esta pasta é o repositório — `git push` publica, com cache de ~10 min).
+
 ## Rodar
 
 É um site estático — qualquer servidor serve:
